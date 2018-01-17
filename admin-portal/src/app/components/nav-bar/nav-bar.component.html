@@ -1,0 +1,10 @@
+
+<mat-toolbar class="mat-primary">
+  <h3>Administration</h3>
+  <span class="example-spacer"></span>
+  <span [hidden]="!loggedIn"><a mat-button>Views Books List</a></span>
+  <span [hidden]="!loggedIn"><a mat-button>Add books</a></span>
+  <span [hidden]="!loggedIn"><a mat-button>Logout</a></span>
+</mat-toolbar>
+
+<button mat-raised-button class="mat-warn" (click)="toggleDisplay()">Toggle</button>
